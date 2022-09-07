@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Poppins:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.container {
+    width: 96%;
+    margin: 0 auto;
+}
+span {
+    font-family: var(--main-font-family);
+}
+nav > ul {
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+}
+nav {
+    display: flex;
+    width: 40%;
+    gap: 1em;
+}
+nav > ul > li {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: var(--main-font-family)
+}
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+.icon-head {
+    justify-content: flex-end;
+    display: flex;
+    gap: 2em;
+    align-self: center;
+}
+.shop {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: black;
+    padding: 0.5em;
+    width: 8em;
+    color: white;
+    font-family: var(--secondary-font-family);
+}
+.shoppy {
+    width: 120em;
+    justify-content:flex-start;
+    align-self: center;
+    height: 2em;
+    display: flex;
+}
+.menu {
+    display: none;
+    border: 0;
+}
+section {
+    display: flex;
+    height: 100vh;
+}
+h1{
+    font-family: var(--secondary-font-family);
+    margin: 0;
+    width: 80%;
+    font-weight: 800;
+    font-size: 3.2em;
+}
+.now {
+    font-family: var(--main-font-family);
+    height: 3em;
+    width: 10em;
+    background-color: black;
+    color: white;
+    border-radius: 0.8em;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+.colm {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.boots {
+    gap: 1em;
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.shoes {
+    width: 600px;
+    height: 430px;
+}
+.shoes1 {
+    margin-top: 7em;
+    align-self: flex-start;
+    width: 380px;
+    height: 340px;
+}
+.bot {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+h2 {
+    font-family: var(--secondary-font-family);
+    left: 10px;
+    position: absolute;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+}
+.sb {
+    left: 80%;
+    top: 80%;
+    color: black;
+    position: absolute;
+}
+.r {
+    background-size: cover;
+    height: 454px;
+    width: 724px;
+    position: relative;
+    background-image: url(../img/boots.png);
+    background-repeat: no-repeat;
+}
+.r1{
+    background-size: cover;
+    height: 454px;
+    width: 724px;
+    position: relative;
+    background-image: url(../img/boots-2.png);
+    background-repeat: no-repeat;
+}
+.sw {
+    position: absolute;
+    left: 10px;
+    top: 80%;
+    color: white;
+}
+.scroller {
+    gap: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    width: 87%;
+    height: 48vh;
+    overflow-x: scroll;
+    scrollbar-color: black;
+    scrollbar-width: thin;
+  }
+h3 {
+    font-family: var(--secondary-font-family);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0;
+    margin-top: 2em;
+}
+h4 {
+    font-family: var(--secondary-font-family);
+    margin: 2em;
+    font-size: 30px;
+    font-weight: 800;
+}
+.new_r {
+    justify-content: center;
+    display: flex;
+}
+.name {
+    font-weight: 900;
+}
+.nvr {
+    gap: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.join {
+    padding: 1em;
+    background: none;
+}
+footer {
+    display: flex;
+    margin-top: 10em;
+    background-color: black;
+    height: 40vh;
+    align-items: center;
+    justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+div>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+div>ul>li {
+    color: white;
+}
+div>ul>li:first-child{
+    color: gray;
+}
+.ll {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    align-items: flex-end;
+    width: 50%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+}
+.follow {
+    color: gray;
+    display: flex;
+}
+.wid {
+    display: flex;
+}
+.icons {
+    gap: 1em;
+    display: flex;
+    color: white;
+}
+footer {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+}
+.copy {
+    text-align: center;
+    color: gray;
+    width: 100%;
+}
+@media screen and (max-width: 500px) and (min-width: 100px) {
+    nav>ul {
+        display: none;
+        gap: 1rem;
+        padding: 0;
+        flex-direction: column;
+    }
+    .menu {
+        display: block;
+    }
+    nav {
+        width: 5%;
+    }
+    .shoppy {
+        width: 40%;
+        justify-content: center;
+    }
+    .icon-head {
+        gap: 1em;
+    }
+    header {
+        gap: 0.5em;
+    }
+    .container {
+        margin: 0;
+        overflow: hidden;
+    }
+    section {
+        flex-direction: column;
+        height: auto;
+    }
+    .colm {
+        order: 2;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .boots {
+        justify-content: flex-start;
+        width: 60%;
+        order: 1;
+        margin-bottom: 6em;
+    }
+    .shoes {
+        width: 80%;
+        height: 80%;
+    }
+    .shoes1 {
+        width: 80%;
+        height: 80%;
+    }
+    h1 {
+        text-align: center;
+    }
+    .now {
+        justify-content: center;
+    }
+    .bot {
+        align-self: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 2em;
+    }
+    .r {
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+    }
+    .r1 {
+        width: 100%;
+        height: 50vh;
+        background-size: contain;
+    }
+    .ll {
+        flex-wrap: wrap;
+        gap: 30%;
+    }
+    footer {
+        height: auto;
+    }
+    h4 {
+        margin-left: 0;
+    }
+    .social {
+        align-items: flex-start;
+        margin-top: 1em;
+        margin-left: 2em;
+    }
+    .icons {
+        margin-top: 1em;
+        gap: 1em;
+    }
+    .wid {
+        flex-wrap: wrap;
+        gap: 10%;
+    }
+    .copy {
+        margin-top: 2em;
+    }
+    .sb {
+        top: 50%;
+    }
+}
+
+:root {
+    --main-font-family:'Poppins', sans-serif;
+    --secondary-font-family:'Montserrat', sans-serif;
+}
